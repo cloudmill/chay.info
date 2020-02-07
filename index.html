@@ -51,21 +51,24 @@
 				<p>Работаем с понедельника по пятницу с 9:00 до 18:45</p>
 				<form action="" method="POST">
 					<div class="form__group">
-						<label class="control-body" for="name2">
+						<div class="float-container">
 							<input class="control" type="text" name="name2" id="name2" placeholder="Ваше имя" />
-						</label>
+							<label for="name2">Ваше имя</label><span>необязательно</span>
+						</div>
 					</div>
 					<div class="form__group">
-						<label class="control-body" for="email2">
+						<div class="float-container">
 							<input class="control" type="text" name="email2" id="email2" placeholder="Почта" />
-						</label>
+							<label for="email2">Почта</label><span>необязательно</span>
+						</div>
 					</div>
 					<div class="form__group">
-						<label class="control-body" for="phone2">
-							<input class="control" type="text" name="phone" id="phone2" placeholder="Ваш телефон" required="required" />
-						</label>
+						<div class="float-container">
+							<input class="control" type="text" name="phone" id="phone6" placeholder="Ваш телефон" required="required" />
+							<label for="phone6">Ваш телефон</label>
+						</div>
 					</div>
-					<button class="btn btn--outlined form__group btn--full" type="submit">Оставить заявку на образец</button>
+					<button class="btn btn--outlined form__group btn--full" type="submit"><span>Оставить заявку на образец</span></button>
 					<div class="radio">
 						<input type="radio" id="sign1" name="sign" />
 						<label class="label" for="sign1"><span>Согласен на обработку персональных данных в соответствии с <a href>политикой конфиденциальности</a></span></label>
@@ -80,7 +83,7 @@
 					<div class="kit">
 						<div class="kit__item">
 							<p class="text--grey text__sm">Подарочный набор</p>
-							<h4>Внимательность</h4>
+							<h5>Внимательность</h5>
 						</div>
 						<div class="kit__item">
 							<p class="text__lg">670 ₽</p>
@@ -138,21 +141,24 @@
 						</div>
 					</div>
 					<div class="form__group">
-						<label class="control-body" for="name3">
+						<div class="float-container">
 							<input class="control" type="text" name="name3" id="name3" placeholder="Ваше имя" />
-						</label>
+							<label for="name3">Ваше имя</label><span>необязательно</span>
+						</div>
 					</div>
 					<div class="form__group">
-						<label class="control-body" for="email3">
+						<div class="float-container">
 							<input class="control" type="text" name="email3" id="email3" placeholder="Почта" />
-						</label>
+							<label for="email3">Почта</label><span>необязательно</span>
+						</div>
 					</div>
 					<div class="form__group">
-						<label class="control-body" for="phone3">
-							<input class="control" type="text" name="phone" id="phone3" placeholder="Ваш телефон" required="required" />
-						</label>
+						<div class="float-container">
+							<input class="control" type="text" name="phone" id="phone5" placeholder="Ваш телефон" required="required" />
+							<label for="phone5">Ваш телефон</label>
+						</div>
 					</div>
-					<button class="btn btn--outlined form__group btn--full" type="submit">Оставить заявку на образец</button>
+					<button class="btn btn--outlined form__group btn--full" type="submit"><span>Оставить заявку на образец</span></button>
 					<div class="radio">
 						<input type="radio" id="sign2" name="sign" />
 						<label class="label" for="sign2"><span>Согласен на обработку персональных данных в соответствии с <a href>политикой конфиденциальности</a></span></label>
@@ -202,7 +208,7 @@
 							<li>1 сорт чая / 1 унция в емкости</li>
 							<li>Тростниковый сахар / 100 гр.</li>
 							<li>Коробка «Классика»</li>
-						</ul><a class="btn btn--info" href="#">Оставить заявку на образец</a><a href="#">Перейти к карточке подарка<img src="assets/images/icons/next.svg" alt="" /></a>
+						</ul><a class="btn btn--primary" href="#"><span>Оставить заявку на образец</span></a><a href="#">Перейти к карточке подарка<img src="assets/images/icons/next.svg" alt="" /></a>
 					</div>
 				</div>
 			</div>
@@ -243,11 +249,11 @@
 								<p>Срок сборки</p>
 								<h4>8 дней</h4>
 							</div>
-							<div class="col col__xs-6">
+							<div class="col col__md-8 col__xs-6">
 								<p>Объем партии</p>
 								<h4>58 подарков</h4>
 							</div>
-						</div><a class="linkDots" href="#">Благодарственное письмо</a><a class="btn btn--info" href="#">Оставить заявку на образец</a>
+						</div><a class="linkDots" href="#">Благодарственное письмо</a><a class="btn btn--primary" href="#"><span>Оставить заявку на подбор подарка</span></a>
 					</div>
 				</div>
 			</div>
@@ -256,19 +262,16 @@
 					<div class="searchBar__close"><img src="assets/images/icons/close.svg" alt="" />
 					</div>
 					<form class="searchBar__input" method="POST">
-						<label class="control-body" for="search">
+						<div class="float-container">
 							<input class="control" type="text" name="search" id="search" placeholder="Что вы хотите найти?" required="required" />
-						</label>
-						<button type="submit"><img src="assets/images/icons/search.svg" alt="" />
-						</button>
+							<label for="search">Что вы хотите найти?</label>
+						</div>
+						<button type="submit"><i class="icon-search"></i></button>
 					</form>
 				</div>
 			</div>
 			<header class="header"><a class="header__logo" href="/"><img src="assets/images/logo.svg" alt="" /></a>
-				<nav class="navbar">
-					<div class="main-nav__toggle">
-						<div class="main-nav__toggle--js">1</div>
-					</div>
+				<nav class="navbar col__lg-6">
 					<div class="main-nav__collapse">
 						<ul class="header__menu">
 							<li class="header__menu-el"><a class="header__menu__item" href="/" title="Каталог подарков">Каталог подарков</a>
@@ -278,15 +281,24 @@
 							<li class="header__menu-el"><a class="header__menu__item" href="" title="Контакты">Контакты</a>
 							</li>
 						</ul>
+						<div class="visible__sm visible__xs">
+							<div class="header__phone"><a href="tel:88005057562">8 800 505-75-62</a></div>
+							<div class="header__btn"><a class="btn btn--outlined btn--sm popup-modal popup-with-zoom-anim" href="#call"><span>получить предложение</span></a></div>
+						</div>
 					</div>
 				</nav>
-				<div class="header__phone"><a href="tel:88005057562">8 800 505-75-62</a></div>
-				<div class="header__search search--js"><a class="header__right__but" href=""><img src="assets/images/icons/search.svg" alt="" /></a></div>
-				<div class="header__btn hidden__xs hidden__sm"><a class="btn btn--outlined popup-modal popup-with-zoom-anim" href="#call">получить предложение</a></div>
+				<div class="header__phone hidden__sm hidden__xs"><a href="tel:88005057562">8 800 505-75-62</a></div>
+				<div class="header__search search--close"><img src="assets/images/icons/close.svg" alt="" />
+				</div>
+				<div class="header__search search--js"><a class="header__right__but" href=""><i class="icon-search"></i></a></div>
+				<div class="main-nav__toggle visible__xs visible__sm">
+					<div class="main-nav__toggle--js"><span></span><span></span></div>
+				</div>
+				<div class="header__btn hidden__xs hidden__sm"><a class="btn btn--outlined popup-modal popup-with-zoom-anim" href="#call"><span>получить предложение</span></a></div>
 			</header>
 			<main class="page index">
 				<section class="mainSlider">
-					<div class="linkInner"><a class="textIcon text__md" href="#"><img src="assets/images/icons/prev.svg" alt="" /><span class="text__md">На основной сайт</span></a></div>
+					<div class="linkInner"><a class="textIcon" href="#"><img src="assets/images/icons/prev.svg" alt="" /><span class="text__sm">На основной сайт</span></a></div>
 					<div class="mainSlider-img"><img src="assets/images/leaf.png" alt="" />
 					</div>
 					<div class="mainSlider-nav">
@@ -294,46 +306,74 @@
 						<div class="slick-next slick-next--ma"></div>
 					</div>
 					<div class="mainSlider--js">
-						<div>
+						<div class="relative">
 							<div class="container">
 								<div class="row">
 									<div class="col col__md-6 col__xs-12">
 										<h1>Корпоративные подарки</h1>
 										<div class="textIcon textIcon--lg"><img src="assets/images/icons/go-go.svg" alt="" />
 											<p class="text__lg">для ваших партнеров, <br /> клиентов и сотрудников</p>
-										</div><a class="btn btn--primary popup-modal popup-with-zoom-anim" href="#card">Оставить заявку на подбор</a>
-										<div class="badgeBody">
-											<div class="badgeNew">New!</div>
-											<div>
-												<p class="text__lg">Новая коллекция подарков <br /> к Новому году</p><a class="link" href="#">скачать каталог</a>
+										</div><a class="btn btn--primary popup-modal popup-with-zoom-anim" href="#card"><span>Оставить заявку на подбор</span></a>
+										<div class="hidden__xs hidden__sm">
+											<div class="badgeBody">
+												<div class="badgeNew">New!</div>
+												<div>
+													<p class="text__lg">Новая коллекция подарков <br /> к Новому году</p><a class="link" href="#">скачать каталог</a>
+												</div>
 											</div>
 										</div>
 									</div>
-									<div class="col col__md-6 col__xs-12"><img src="assets/images/sliderImg.png" alt="" />
+									<div class="col col__md-6 col__xs-12">
+										<div class="mainSliderImg"><img src="assets/images/sliderImg.png" alt="" />
+											<div class="badge"><img src="assets/images/badge.svg" alt="" />
+											</div>
+										</div>
 										<p class="text__xs text--grey">ПОДАРОЧНЫЙ НАБОР</p>
 										<p class="text__lg">Для хорошего вкуса</p><a class="link" href="card.html">подробнее о подарке</a>
+										<div class="visible__xs visible__sm">
+											<div class="badgeBody">
+												<div class="badgeNew">New!</div>
+												<div>
+													<p class="text__lg">Новая коллекция подарков <br /> к Новому году</p><a class="link" href="#">скачать каталог</a>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div>
+						<div class="relative">
 							<div class="container">
 								<div class="row">
 									<div class="col col__md-6 col__xs-12">
 										<h1>Корпоративные подарки</h1>
 										<div class="textIcon textIcon--lg"><img src="assets/images/icons/go-go.svg" alt="" />
 											<p class="text__lg">для ваших партнеров, <br /> клиентов и сотрудников</p>
-										</div><a class="btn btn--primary popup-modal popup-with-zoom-anim" href="#card">Оставить заявку на подбор</a>
-										<div class="badgeBody">
-											<div class="badgeNew">New!</div>
-											<div>
-												<p class="text__lg">Новая коллекция подарков <br /> к Новому году</p><a class="link" href="#">скачать каталог</a>
+										</div><a class="btn btn--primary popup-modal popup-with-zoom-anim" href="#card"><span>Оставить заявку на подбор</span></a>
+										<div class="hidden__xs hidden__sm">
+											<div class="badgeBody">
+												<div class="badgeNew">New!</div>
+												<div>
+													<p class="text__lg">Новая коллекция подарков <br /> к Новому году</p><a class="link" href="#">скачать каталог</a>
+												</div>
 											</div>
 										</div>
 									</div>
-									<div class="col col__md-6 col__xs-12"><img src="assets/images/sliderImg.png" alt="" />
+									<div class="col col__md-6 col__xs-12">
+										<div class="mainSliderImg"><img src="assets/images/sliderImg.png" alt="" />
+											<div class="badge"><img src="assets/images/badge.svg" alt="" />
+											</div>
+										</div>
 										<p class="text__xs text--grey">ПОДАРОЧНЫЙ НАБОР</p>
 										<p class="text__lg">Для хорошего вкуса</p><a class="link" href="card.html">подробнее о подарке</a>
+										<div class="visible__xs visible__sm">
+											<div class="badgeBody">
+												<div class="badgeNew">New!</div>
+												<div>
+													<p class="text__lg">Новая коллекция подарков <br /> к Новому году</p><a class="link" href="#">скачать каталог</a>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -344,7 +384,7 @@
 					<section class="mainCatalog">
 						<div class="title">
 							<h2>Наши каталоги</h2>
-							<div class="slider-nav">
+							<div class="slider-nav hidden__xs hidden__sm">
 								<div class="slick-prev slick-prev--ct"><i class="sprite--prev"></i></div>
 								<div class="slick-next slick-next--ct"><i class="sprite--next"></i></div>
 							</div>
@@ -398,24 +438,28 @@
 							<div class="tabs-list"><a class="tab active" href="#stage1">8 марта</a><a class="tab" href="#stage2">23 февраля</a><a class="tab" href="#stage3">новый год</a>
 								<div class="orders orders--js">
 									<div class="orders-el">
-										<select class="select-templating" style="width: 120px">
+										<select class="select-templating" style="width: 90px">
 											<option selected="selected" disabled="disabled">повод</option>
-											<option>повод</option>
-											<option>повод</option>
+											<option>Название поля 1</option>
+											<option>Название поля 2</option>
 										</select>
 									</div>
 									<div class="orders-el">
-										<select class="select-templating" style="width: 180px">
-											<option selected="selected" disabled="disabled">стоимость</option>
-											<option>стоимость</option>
-											<option>стоимость</option>
-										</select>
+										<div class="range-templating">
+											<div class="range-templating-title">стоимость</div>
+											<div id="range">
+												<div class="input-group">
+													<input class="control control--border" id="skip-value-lower" type="text" /><span>—</span>
+													<input class="control control--border" id="skip-value-upper" type="text" />
+												</div>
+											</div>
+										</div>
 									</div>
 									<div class="orders-el">
-										<select class="select-templating" style="width: 160px">
+										<select class="select-templating" style="width: 120px">
 											<option selected="selected" disabled="disabled">упаковка</option>
-											<option>упаковка</option>
-											<option>упаковка</option>
+											<option>Название поля 1</option>
+											<option>Название поля 2</option>
 										</select>
 									</div>
 								</div>
@@ -424,7 +468,7 @@
 								<div class="moreDetail--js">
 									<div class="row between__xs middle__xs">
 										<div class="sorting col"><span>Сортировать:</span>
-											<select class="select-templating" style="width: 200px">
+											<select class="select-templating--nx" style="width: 200px">
 												<option value="icon-select-up">Сначала дорогие</option>
 												<option value="icon-select-down">Сначала дешевые</option>
 											</select>
@@ -440,97 +484,97 @@
 											<div class="products__item-img"><img src="assets/images/prod-1.png" /></div>
 											<div class="products__item-title">Рождественская посылка</div>
 											<div class="products__item-price">670 ₽</div>
-											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card">Заказать подарок</a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
+											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card"><span>Заказать подарок</span></a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
 										</div>
 										<div class="products__item">
 											<div class="products__item-img"><img src="assets/images/prod-2.png" /></div>
 											<div class="products__item-title">Вечер на льду</div>
 											<div class="products__item-price">670 ₽</div>
-											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card">Заказать подарок</a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
+											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card"><span>Заказать подарок</span></a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
 										</div>
 										<div class="products__item">
 											<div class="products__item-img"><img src="assets/images/prod-3.png" /></div>
 											<div class="products__item-title">Посылка камин</div>
 											<div class="products__item-price">670 ₽</div>
-											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card">Заказать подарок</a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
+											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card"><span>Заказать подарок</span></a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
 										</div>
 										<div class="products__item">
 											<div class="products__item-img"><img src="assets/images/prod-4.png" /></div>
 											<div class="products__item-title">Встреча</div>
 											<div class="products__item-price">670 ₽</div>
-											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card">Заказать подарок</a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
+											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card"><span>Заказать подарок</span></a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
 										</div>
 										<div class="products__item">
 											<div class="products__item-img"><img src="assets/images/prod-5.png" /></div>
 											<div class="products__item-title">Золотой узор</div>
 											<div class="products__item-price">670 ₽</div>
-											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card">Заказать подарок</a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
+											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card"><span>Заказать подарок</span></a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
 										</div>
 										<div class="products__item">
 											<div class="products__item-img"><img src="assets/images/prod-6.png" /></div>
 											<div class="products__item-title">Зимняя сказка</div>
 											<div class="products__item-price">670 ₽</div>
-											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card">Заказать подарок</a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
+											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card"><span>Заказать подарок</span></a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
 										</div>
 										<div class="products__item">
 											<div class="products__item-img"><img src="assets/images/prod-7.png" /></div>
 											<div class="products__item-title">Внимательность</div>
 											<div class="products__item-price">670 ₽</div>
-											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card">Заказать подарок</a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
+											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card"><span>Заказать подарок</span></a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
 										</div>
 										<div class="products__item">
 											<div class="products__item-img"><img src="assets/images/prod-8.png" /></div>
 											<div class="products__item-title">Биг-Бен</div>
 											<div class="products__item-price">670 ₽</div>
-											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card">Заказать подарок</a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
+											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card"><span>Заказать подарок</span></a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
 										</div>
 										<div class="products__item hideBlock">
 											<div class="products__item-img"><img src="assets/images/prod-1.png" /></div>
 											<div class="products__item-title">Рождественская посылка</div>
 											<div class="products__item-price">670 ₽</div>
-											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card">Заказать подарок</a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
+											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card"><span>Заказать подарок</span></a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
 										</div>
 										<div class="products__item hideBlock">
 											<div class="products__item-img"><img src="assets/images/prod-2.png" /></div>
 											<div class="products__item-title">Вечер на льду</div>
 											<div class="products__item-price">670 ₽</div>
-											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card">Заказать подарок</a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
+											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card"><span>Заказать подарок</span></a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
 										</div>
 										<div class="products__item hideBlock">
 											<div class="products__item-img"><img src="assets/images/prod-3.png" /></div>
 											<div class="products__item-title">Посылка камин</div>
 											<div class="products__item-price">670 ₽</div>
-											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card">Заказать подарок</a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
+											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card"><span>Заказать подарок</span></a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
 										</div>
 										<div class="products__item hideBlock">
 											<div class="products__item-img"><img src="assets/images/prod-4.png" /></div>
 											<div class="products__item-title">Встреча</div>
 											<div class="products__item-price">670 ₽</div>
-											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card">Заказать подарок</a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
+											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card"><span>Заказать подарок</span></a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
 										</div>
 										<div class="products__item hideBlock">
 											<div class="products__item-img"><img src="assets/images/prod-5.png" /></div>
 											<div class="products__item-title">Золотой узор</div>
 											<div class="products__item-price">670 ₽</div>
-											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card">Заказать подарок</a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
+											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card"><span>Заказать подарок</span></a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
 										</div>
 										<div class="products__item hideBlock">
 											<div class="products__item-img"><img src="assets/images/prod-6.png" /></div>
 											<div class="products__item-title">Зимняя сказка</div>
 											<div class="products__item-price">670 ₽</div>
-											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card">Заказать подарок</a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
+											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card"><span>Заказать подарок</span></a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
 										</div>
 										<div class="products__item hideBlock">
 											<div class="products__item-img"><img src="assets/images/prod-7.png" /></div>
 											<div class="products__item-title">Внимательность</div>
 											<div class="products__item-price">670 ₽</div>
-											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card">Заказать подарок</a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
+											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card"><span>Заказать подарок</span></a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
 										</div>
 										<div class="products__item hideBlock">
 											<div class="products__item-img"><img src="assets/images/prod-8.png" /></div>
 											<div class="products__item-title">Биг-Бен</div>
 											<div class="products__item-price">670 ₽</div>
-											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card">Заказать подарок</a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
+											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card"><span>Заказать подарок</span></a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
 										</div>
 									</div>
 									<div class="showMore-body">
@@ -565,49 +609,49 @@
 											<div class="products__item-img"><img src="assets/images/prod-1.png" /></div>
 											<div class="products__item-title">Рождественская посылка</div>
 											<div class="products__item-price">670 ₽</div>
-											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card">Заказать подарок</a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
+											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card"><span>Заказать подарок</span></a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
 										</div>
 										<div class="products__item">
 											<div class="products__item-img"><img src="assets/images/prod-2.png" /></div>
 											<div class="products__item-title">Вечер на льду</div>
 											<div class="products__item-price">670 ₽</div>
-											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card">Заказать подарок</a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
+											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card"><span>Заказать подарок</span></a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
 										</div>
 										<div class="products__item">
 											<div class="products__item-img"><img src="assets/images/prod-3.png" /></div>
 											<div class="products__item-title">Посылка камин</div>
 											<div class="products__item-price">670 ₽</div>
-											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card">Заказать подарок</a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
+											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card"><span>Заказать подарок</span></a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
 										</div>
 										<div class="products__item">
 											<div class="products__item-img"><img src="assets/images/prod-4.png" /></div>
 											<div class="products__item-title">Встреча</div>
 											<div class="products__item-price">670 ₽</div>
-											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card">Заказать подарок</a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
+											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card"><span>Заказать подарок</span></a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
 										</div>
 										<div class="products__item">
 											<div class="products__item-img"><img src="assets/images/prod-5.png" /></div>
 											<div class="products__item-title">Золотой узор</div>
 											<div class="products__item-price">670 ₽</div>
-											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card">Заказать подарок</a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
+											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card"><span>Заказать подарок</span></a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
 										</div>
 										<div class="products__item">
 											<div class="products__item-img"><img src="assets/images/prod-6.png" /></div>
 											<div class="products__item-title">Зимняя сказка</div>
 											<div class="products__item-price">670 ₽</div>
-											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card">Заказать подарок</a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
+											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card"><span>Заказать подарок</span></a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
 										</div>
 										<div class="products__item">
 											<div class="products__item-img"><img src="assets/images/prod-7.png" /></div>
 											<div class="products__item-title">Внимательность</div>
 											<div class="products__item-price">670 ₽</div>
-											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card">Заказать подарок</a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
+											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card"><span>Заказать подарок</span></a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
 										</div>
 										<div class="products__item">
 											<div class="products__item-img"><img src="assets/images/prod-8.png" /></div>
 											<div class="products__item-title">Биг-Бен</div>
 											<div class="products__item-price">670 ₽</div>
-											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card">Заказать подарок</a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
+											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card"><span>Заказать подарок</span></a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
 										</div>
 									</div>
 								</div>
@@ -632,49 +676,49 @@
 											<div class="products__item-img"><img src="assets/images/prod-1.png" /></div>
 											<div class="products__item-title">Рождественская посылка</div>
 											<div class="products__item-price">670 ₽</div>
-											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card">Заказать подарок</a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
+											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card"><span>Заказать подарок</span></a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
 										</div>
 										<div class="products__item">
 											<div class="products__item-img"><img src="assets/images/prod-2.png" /></div>
 											<div class="products__item-title">Вечер на льду</div>
 											<div class="products__item-price">670 ₽</div>
-											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card">Заказать подарок</a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
+											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card"><span>Заказать подарок</span></a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
 										</div>
 										<div class="products__item">
 											<div class="products__item-img"><img src="assets/images/prod-3.png" /></div>
 											<div class="products__item-title">Посылка камин</div>
 											<div class="products__item-price">670 ₽</div>
-											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card">Заказать подарок</a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
+											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card"><span>Заказать подарок</span></a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
 										</div>
 										<div class="products__item">
 											<div class="products__item-img"><img src="assets/images/prod-4.png" /></div>
 											<div class="products__item-title">Встреча</div>
 											<div class="products__item-price">670 ₽</div>
-											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card">Заказать подарок</a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
+											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card"><span>Заказать подарок</span></a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
 										</div>
 										<div class="products__item">
 											<div class="products__item-img"><img src="assets/images/prod-5.png" /></div>
 											<div class="products__item-title">Золотой узор</div>
 											<div class="products__item-price">670 ₽</div>
-											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card">Заказать подарок</a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
+											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card"><span>Заказать подарок</span></a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
 										</div>
 										<div class="products__item">
 											<div class="products__item-img"><img src="assets/images/prod-6.png" /></div>
 											<div class="products__item-title">Зимняя сказка</div>
 											<div class="products__item-price">670 ₽</div>
-											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card">Заказать подарок</a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
+											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card"><span>Заказать подарок</span></a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
 										</div>
 										<div class="products__item">
 											<div class="products__item-img"><img src="assets/images/prod-7.png" /></div>
 											<div class="products__item-title">Внимательность</div>
 											<div class="products__item-price">670 ₽</div>
-											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card">Заказать подарок</a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
+											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card"><span>Заказать подарок</span></a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
 										</div>
 										<div class="products__item">
 											<div class="products__item-img"><img src="assets/images/prod-8.png" /></div>
 											<div class="products__item-title">Биг-Бен</div>
 											<div class="products__item-price">670 ₽</div>
-											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card">Заказать подарок</a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
+											<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card"><span>Заказать подарок</span></a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
 										</div>
 									</div>
 								</div>
@@ -690,7 +734,7 @@
 								</div>
 								<div class="showText showText--js">раскрыть</div>
 							</div>
-							<div class="col col__lg-8 col__md-6 col__xs-12">
+							<div class="col col__lg-8 col__md-6 col__xs-12 hidden__sm hidden__xs">
 								<div class="mainPresents-img"><img src="assets/images/presents.png" alt="" />
 								</div>
 							</div>
@@ -703,7 +747,7 @@
 								<div class="presentsList__item-title">
 									<h4>Доставка бесплатно</h4>
 								</div>
-								<div class="presentsList__item-desc">Доставка в Санкт-Петербурге и Москве бесплано. В регионы доставка бесплатна при заказе от 70 000 ₽.</div>
+								<div class="presentsList__item-desc">Доставка в&nbsp;Санкт-Петербурге и&nbsp;Москве бесплано. В&nbsp;регионы доставка бесплатна при заказе от&nbsp;70 000 ₽.</div>
 							</div>
 							<div class="presentsList__item">
 								<div class="presentsList__item-num">02</div>
@@ -712,16 +756,16 @@
 								<div class="presentsList__item-title">
 									<h4>Cоберем за день</h4>
 								</div>
-								<div class="presentsList__item-desc">В некоторых случаях заказ может быть у вас уже завтра! Чаще на это уходит 3-4 дня в зависимости от количества, состава, нанесения логотипа.</div>
+								<div class="presentsList__item-desc">В&nbsp;некоторых случаях заказ может быть у&nbsp;вас уже завтра! Чаще на это уходит 3-4 дня <br /> в&nbsp;зависимости от количества, состава, нанесения логотипа.</div>
 							</div>
 							<div class="presentsList__item">
 								<div class="presentsList__item-num">03</div>
 								<div class="presentsList__item-img"><img src="assets/images/list-3.svg" alt="" />
 								</div>
 								<div class="presentsList__item-title">
-									<h4>Создадим дизайн открытки с логотипом вашей компании</h4>
+									<h4>Создадим дизайн открытки с&nbsp;логотипом вашей компании</h4>
 								</div>
-								<div class="presentsList__item-desc">Бесплатно разработаем логотип и фирменный стиль под нанесением на подарок.</div>
+								<div class="presentsList__item-desc">Бесплатно разработаем логотип и&nbsp;фирменный стиль под&nbsp;нанесением на&nbsp;подарок.</div>
 							</div>
 						</div>
 					</section>
@@ -737,26 +781,30 @@
 								<div class="row">
 									<div class="col col__md-6 col__xs-12">
 										<div class="form__group">
-											<label class="control-body" for="name">
+											<div class="float-container">
 												<input class="control" type="text" name="name" id="name" placeholder="Ваше имя" />
-											</label>
+												<label for="name">Ваше имя</label><span>необязательно</span>
+											</div>
 										</div>
 										<div class="form__group">
-											<label class="control-body" for="phone">
+											<div class="float-container">
 												<input class="control" type="text" name="phone" id="phone" placeholder="Ваш телефон" required="required" />
-											</label>
+												<label for="phone">Ваш телефон</label>
+											</div>
 										</div>
 										<div class="form__group">
-											<label class="control-body" for="desc">
+											<div class="float-container">
 												<textarea class="control" name="desc" id="desc" placeholder="Описание заказа" rows="5"></textarea>
-											</label>
+												<label for="desc">Описание заказа</label><span>необязательно</span>
+											</div>
 										</div>
 									</div>
 									<div class="col col__md-6 col__xs-12">
 										<div class="form__group">
-											<label class="control-body" for="email">
+											<div class="float-container">
 												<input class="control" type="email" name="email" id="email" placeholder="Почта" />
-											</label>
+												<label for="email">Почта</label><span>необязательно</span>
+											</div>
 										</div>
 										<div class="form__group">
 											<div class="radio radio--custom">
@@ -770,7 +818,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="row form__group middle__xs">
+										<div class="row form__group middle__xs form__group--sm">
 											<div class="text__lg col">Количество подарков</div>
 											<div class="input__body col">
 												<div class="input__quantity input__quantity-js">
@@ -782,7 +830,7 @@
 												</div>
 											</div>
 										</div>
-										<button class="form__group btn btn--full btn--outlined" href="#">Оставить заявку на подбор</button>
+										<button class="form__group btn btn--full btn--outlined" href="#"><span>Оставить заявку на подбор</span></button>
 										<div class="radio">
 											<input type="radio" id="sign" name="sign" />
 											<label class="label" for="sign"><span>Согласен на обработку персональных данных в соответствии с <a href>политикой конфиденциальности</a></span></label>
@@ -802,7 +850,7 @@
 							<div class="tabs-list"><a class="tab active" href="#tab1">Упаковку</a><a class="tab" href="#tab2">Состав</a><a class="tab" href="#tab3">Куда нанести логотип</a></div>
 							<div class="tabs-content show" id="tab1">
 								<div class="tabs">
-									<div class="tabs-list"><a class="tab active" href="#package1">Пленка</a><a class="tab" href="#package2">Емкость</a><a class="tab" href="#package3">Поддоны</a><a class="tab" href="#package4">Подарочный пакет</a><a class="tab" href="#package5">Коробка</a><a class="tab" href="#package6">Корзины</a><a class="tab" href="#package7">Чайный торт</a><a class="tab" href="#package8">Букет</a></div>
+									<div class="tabs-list"><a class="tab active" href="#package1"><span>Пленка</span></a><a class="tab" href="#package2"><span>Емкость</span></a><a class="tab" href="#package3"><span>Поддоны</span></a><a class="tab" href="#package4"><span>Подарочный пакет</span></a><a class="tab" href="#package5"><span>Коробка</span></a><a class="tab" href="#package6"><span>Корзины</span></a><a class="tab" href="#package7"><span>Чайный торт</span></a><a class="tab" href="#package8"><span>Букет</span></a></div>
 									<div class="tabs-content show" id="package1">
 										<div class="row between__xs">
 											<div class="col col__md-6 col__xs-12">
@@ -828,7 +876,7 @@
 															<p>до <span>670 ₽</span></p>
 														</div>
 													</div>
-													<div class="col__lg-6"><a class="btn--full btn btn--outlined" href="#">мне подходит</a></div>
+													<div class="col__lg-6 col__md-7"><a class="btn--full btn btn--outlined" href="#"><span>мне подходит</span></a></div>
 												</div>
 											</div>
 										</div>
@@ -858,7 +906,7 @@
 															<p>до <span>670 ₽</span></p>
 														</div>
 													</div>
-													<div class="col__lg-6"><a class="btn--full btn btn--outlined" href="#">мне подходит</a></div>
+													<div class="col__lg-6 col__md-7"><a class="btn--full btn btn--outlined" href="#"><span>мне подходит</span></a></div>
 												</div>
 											</div>
 										</div>
@@ -888,7 +936,7 @@
 															<p>до <span>670 ₽</span></p>
 														</div>
 													</div>
-													<div class="col__lg-6"><a class="btn--full btn btn--outlined" href="#">мне подходит</a></div>
+													<div class="col__lg-6 col__md-7"><a class="btn--full btn btn--outlined" href="#"><span>мне подходит</span></a></div>
 												</div>
 											</div>
 										</div>
@@ -918,7 +966,7 @@
 															<p>до <span>670 ₽</span></p>
 														</div>
 													</div>
-													<div class="col__lg-6"><a class="btn--full btn btn--outlined" href="#">мне подходит</a></div>
+													<div class="col__lg-6 col__md-7"><a class="btn--full btn btn--outlined" href="#"><span>мне подходит</span></a></div>
 												</div>
 											</div>
 										</div>
@@ -948,7 +996,7 @@
 															<p>до <span>670 ₽</span></p>
 														</div>
 													</div>
-													<div class="col__lg-6"><a class="btn--full btn btn--outlined" href="#">мне подходит</a></div>
+													<div class="col__lg-6 col__md-7"><a class="btn--full btn btn--outlined" href="#"><span>мне подходит</span></a></div>
 												</div>
 											</div>
 										</div>
@@ -978,7 +1026,7 @@
 															<p>до <span>670 ₽</span></p>
 														</div>
 													</div>
-													<div class="col__lg-6"><a class="btn--full btn btn--outlined" href="#">мне подходит</a></div>
+													<div class="col__lg-6 col__md-7"><a class="btn--full btn btn--outlined" href="#"><span>мне подходит</span></a></div>
 												</div>
 											</div>
 										</div>
@@ -1008,7 +1056,7 @@
 															<p>до <span>670 ₽</span></p>
 														</div>
 													</div>
-													<div class="col__lg-6"><a class="btn--full btn btn--outlined" href="#">мне подходит</a></div>
+													<div class="col__lg-6 col__md-7"><a class="btn--full btn btn--outlined" href="#"><span>мне подходит</span></a></div>
 												</div>
 											</div>
 										</div>
@@ -1038,7 +1086,7 @@
 															<p>до <span>670 ₽</span></p>
 														</div>
 													</div>
-													<div class="col__lg-6"><a class="btn--full btn btn--outlined" href="#">мне подходит</a></div>
+													<div class="col__lg-6 col__md-7"><a class="btn--full btn btn--outlined" href="#"><span>мне подходит</span></a></div>
 												</div>
 											</div>
 										</div>
@@ -1057,7 +1105,7 @@
 									</div>
 								</blockquote>
 								<div class="row compos">
-									<div class="col col__lg-6 col__xs-12 compos__item">
+									<div class="col col__md-6 col__xs-12 compos__item">
 										<div class="compos__item-img"><img src="assets/images/compos1.svg" alt="" />
 										</div>
 										<div class="compos__item-desc">
@@ -1065,7 +1113,7 @@
 											<p class="text__sm">240 сортов чая от 100 рублей за унцию (28,35 грамм) из ассортимента магазинов «Унция». Каждый год чай проходит собственные тесты качества и получает высокие оценки. Чай фасуется в крафт пакеты, фольгированные изнутри, что позволяет ему храниться дольше. Пакеты с чаем подписываются вручную красивым почерком.</p>
 										</div>
 									</div>
-									<div class="col col__lg-6 col__xs-12 compos__item">
+									<div class="col col__mdv-6 col__xs-12 compos__item">
 										<div class="compos__item-img"><img src="assets/images/compos3.svg" alt="" />
 										</div>
 										<div class="compos__item-desc">
@@ -1073,7 +1121,7 @@
 											<p class="text__sm">Шоколад (в упаковке или колотый), орешки и фрукты в йогурте и шоколаде из Греции. Варенье собственного производства с необычными вкусами. Сладости украшают подарок и являются отличным дополнением к чаю и кофе.</p>
 										</div>
 									</div>
-									<div class="col col__lg-6 col__xs-12 compos__item">
+									<div class="col col__md-6 col__xs-12 compos__item">
 										<div class="compos__item-img"><img src="assets/images/compos2.svg" alt="" />
 										</div>
 										<div class="compos__item-desc">
@@ -1081,7 +1129,7 @@
 											<p class="text__sm">60 сортов, включая 20 сортов собственной свежей обжарки от 65 рублей за унцию (28,35 грамм). Кофе можем упаковать в зернах или помолоть.</p>
 										</div>
 									</div>
-									<div class="col col__lg-6 col__xs-12 compos__item">
+									<div class="col col__md-6 col__xs-12 compos__item">
 										<div class="compos__item-img"><img src="assets/images/compos4.svg" alt="" />
 										</div>
 										<div class="compos__item-desc">
@@ -1093,7 +1141,7 @@
 							</div>
 							<div class="tabs-content" id="tab3">
 								<div class="tabs">
-									<div class="tabs-list"><a class="tab active" href="#place1">Открытка</a><a class="tab" href="#place2">Рукав на коробку</a><a class="tab" href="#place3">Рукав на емкость</a><a class="tab" href="#place4">Наклейки на пакет с чаем</a><a class="tab" href="#place5">Круглый стикер на сладости</a><a class="tab" href="#place6">Наклейка на крышку коробки</a><a class="tab" href="#place7">Гравировка/деколь посуды</a><a class="tab" href="#place8">Лента</a></div>
+									<div class="tabs-list"><a class="tab active" href="#place1"><span>Открытка</span></a><a class="tab" href="#place2"><span>Рукав на коробку</span></a><a class="tab" href="#place3"><span>Рукав на емкость</span></a><a class="tab" href="#place4"><span>Наклейки на пакет с чаем</span></a><a class="tab" href="#place5"><span>Круглый стикер на сладости</span></a><a class="tab" href="#place6"><span>Наклейка на крышку коробки</span></a><a class="tab" href="#place7"><span>Гравировка/деколь посуды</span></a><a class="tab" href="#place8"><span>Лента</span></a></div>
 									<div class="tabs-content show" id="place1">
 										<div class="row between__xs">
 											<div class="col col__md-6 col__xs-12">
@@ -1110,7 +1158,7 @@
 												<div class="mainDesign-desc">
 													<h4>В зависимости от типа подарка, мы можем сделать большую (например, для корзины) или маленькую (например, для маленькой коробки) открытку.</h4>
 													<p>Стоимость от 8 до 45 рублей (зависит от тиража и размера, так,1000 маленьких открыток будет стоить 8 рублей за штучку, а 10 больших - 50 рублей за штуку).</p><br />
-													<div class="col__lg-6"><a class="btn--full btn btn--outlined" href="#">мне подходит</a></div>
+													<div class="col__lg-6 col__md-7"><a class="btn--full btn btn--outlined" href="#"><span>мне подходит</span></a></div>
 												</div>
 											</div>
 										</div>
@@ -1129,7 +1177,7 @@
 												<div class="mainDesign-desc">
 													<h4>В зависимости от типа подарка, мы можем сделать большую (например, для корзины) или маленькую (например, для маленькой коробки) открытку.</h4>
 													<p>Стоимость от 8 до 45 рублей (зависит от тиража и размера, так,1000 маленьких открыток будет стоить 8 рублей за штучку, а 10 больших - 50 рублей за штуку).</p><br />
-													<div class="col__lg-6"><a class="btn--full btn btn--outlined" href="#">мне подходит</a></div>
+													<div class="col__lg-6 col__md-7"><a class="btn--full btn btn--outlined" href="#"><span>мне подходит</span></a></div>
 												</div>
 											</div>
 										</div>
@@ -1148,7 +1196,7 @@
 												<div class="mainDesign-desc">
 													<h4>В зависимости от типа подарка, мы можем сделать большую (например, для корзины) или маленькую (например, для маленькой коробки) открытку.</h4>
 													<p>Стоимость от 8 до 45 рублей (зависит от тиража и размера, так,1000 маленьких открыток будет стоить 8 рублей за штучку, а 10 больших - 50 рублей за штуку).</p><br />
-													<div class="col__lg-6"><a class="btn--full btn btn--outlined" href="#">мне подходит</a></div>
+													<div class="col__lg-6 col__md-7"><a class="btn--full btn btn--outlined" href="#"><span>мне подходит</span></a></div>
 												</div>
 											</div>
 										</div>
@@ -1167,7 +1215,7 @@
 												<div class="mainDesign-desc">
 													<h4>В зависимости от типа подарка, мы можем сделать большую (например, для корзины) или маленькую (например, для маленькой коробки) открытку.</h4>
 													<p>Стоимость от 8 до 45 рублей (зависит от тиража и размера, так,1000 маленьких открыток будет стоить 8 рублей за штучку, а 10 больших - 50 рублей за штуку).</p><br />
-													<div class="col__lg-6"><a class="btn--full btn btn--outlined" href="#">мне подходит</a></div>
+													<div class="col__lg-6 col__md-7"><a class="btn--full btn btn--outlined" href="#"><span>мне подходит</span></a></div>
 												</div>
 											</div>
 										</div>
@@ -1186,7 +1234,7 @@
 												<div class="mainDesign-desc">
 													<h4>В зависимости от типа подарка, мы можем сделать большую (например, для корзины) или маленькую (например, для маленькой коробки) открытку.</h4>
 													<p>Стоимость от 8 до 45 рублей (зависит от тиража и размера, так,1000 маленьких открыток будет стоить 8 рублей за штучку, а 10 больших - 50 рублей за штуку).</p><br />
-													<div class="col__lg-6"><a class="btn--full btn btn--outlined" href="#">мне подходит</a></div>
+													<div class="col__lg-6 col__md-7"><a class="btn--full btn btn--outlined" href="#"><span>мне подходит</span></a></div>
 												</div>
 											</div>
 										</div>
@@ -1205,7 +1253,7 @@
 												<div class="mainDesign-desc">
 													<h4>В зависимости от типа подарка, мы можем сделать большую (например, для корзины) или маленькую (например, для маленькой коробки) открытку.</h4>
 													<p>Стоимость от 8 до 45 рублей (зависит от тиража и размера, так,1000 маленьких открыток будет стоить 8 рублей за штучку, а 10 больших - 50 рублей за штуку).</p><br />
-													<div class="col__lg-6"><a class="btn--full btn btn--outlined" href="#">мне подходит</a></div>
+													<div class="col__lg-6 col__md-7"><a class="btn--full btn btn--outlined" href="#"><span>мне подходит</span></a></div>
 												</div>
 											</div>
 										</div>
@@ -1224,7 +1272,7 @@
 												<div class="mainDesign-desc">
 													<h4>В зависимости от типа подарка, мы можем сделать большую (например, для корзины) или маленькую (например, для маленькой коробки) открытку.</h4>
 													<p>Стоимость от 8 до 45 рублей (зависит от тиража и размера, так,1000 маленьких открыток будет стоить 8 рублей за штучку, а 10 больших - 50 рублей за штуку).</p><br />
-													<div class="col__lg-6"><a class="btn--full btn btn--outlined" href="#">мне подходит</a></div>
+													<div class="col__lg-6 col__md-7"><a class="btn--full btn btn--outlined" href="#"><span>мне подходит</span></a></div>
 												</div>
 											</div>
 										</div>
@@ -1243,7 +1291,7 @@
 												<div class="mainDesign-desc">
 													<h4>В зависимости от типа подарка, мы можем сделать большую (например, для корзины) или маленькую (например, для маленькой коробки) открытку.</h4>
 													<p>Стоимость от 8 до 45 рублей (зависит от тиража и размера, так,1000 маленьких открыток будет стоить 8 рублей за штучку, а 10 больших - 50 рублей за штуку).</p><br />
-													<div class="col__lg-6"><a class="btn--full btn btn--outlined" href="#">мне подходит</a></div>
+													<div class="col__lg-6 col__md-7"><a class="btn--full btn btn--outlined" href="#"><span>мне подходит</span></a></div>
 												</div>
 											</div>
 										</div>
@@ -1255,7 +1303,7 @@
 				</section>
 				<section class="mainClients">
 					<div class="row">
-						<div class="col col__md-6 col__xs-12"><img src="assets/images/presents1.jpg" alt="" />
+						<div class="col col__md-6 col__xs-12 hidden__xs hidden__sm"><img src="assets/images/presents1.jpg" alt="" />
 						</div>
 						<div class="col col__md-6 col__xs-12 relative">
 							<h2>C нами работают</h2>
@@ -1315,11 +1363,13 @@
 									</div>
 								</div>
 							</div>
-							<div class="slider-nav">
-								<div class="slick-prev slick-prev--cl"><i class="sprite--prev"></i></div>
-								<div class="slick-next slick-next--cl"><i class="sprite--next"></i></div>
+							<div class="slider-nav hidden__sm hidden__xs">
+								<div class="slick-prev slick-prev--cl"><img src="assets/images/icons/prev-bl.svg" alt="" />
+								</div>
+								<div class="slick-next slick-next--cl"><img src="assets/images/icons/next-bl.svg" alt="" />
+								</div>
 							</div>
-							<div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+							<div class="progress hidden__sm hidden__xs" role="progressbar" aria-valuemin="0" aria-valuemax="100">
 								<div class="slider__label sr-only"></div>
 							</div>
 						</div>
@@ -1335,7 +1385,7 @@
 								<div class="mainHowToList__item-num">01</div>
 								<div class="mainHowToList__item-img"><img src="assets/images/howTo1.svg" alt="" />
 								</div>
-								<div class="mainHowToList__item-desc">Вы выбираете готовые подарки из каталога или оставляете заявку на разработку индивидуального решения</div>
+								<div class="mainHowToList__item-desc">Вы выбираете готовые подарки из <a href="#">каталога</a> или&nbsp;оставляете заявку на разработку индивидуального решения</div>
 							</div>
 							<div class="mainHowToList__item">
 								<div class="mainHowToList__item-num">02</div>
@@ -1367,7 +1417,7 @@
 								<div class="col col__md-6 col__xs-12 relative">
 									<div class="mainHowTo-orders-ico"><img src="assets/images/flower.svg" alt="" />
 									</div>
-									<h2>Принимаем <br /> заказы <br /> от <span class="text--primary">10000 ₽</span></h2>
+									<h2>Принимаем заказы <br /> от <span class="text--primary">10000 ₽</span></h2>
 								</div>
 								<div class="col col__md-6 col__xs-12">
 									<div class="mainHowTo-orders-img"><img src="assets/images/presentBig.png" alt="" />
@@ -1384,8 +1434,8 @@
 							<div class="row between__xs">
 								<div class="col col__md-6 col__xs-12">
 									<h4>Москва и Санкт-Петербург</h4>
-									<p class="text__md">Доставка в Санкт-Петербурге и Москве в пределах КАД и МКАД бесплатна.</p>
-									<p class="text__md">Стоимость доставки за пределы КАДа и МКАДа необходимо уточнить у менеджера.</p>
+									<p class="text__md">Доставка в Санкт-Петербурге и&nbsp;Москве в&nbsp;пределах КАД и&nbsp;МКАД бесплатна.</p>
+									<p class="text__md">Стоимость доставки за пределы КАДа и&nbsp;МКАДа необходимо уточнить у&nbsp;менеджера.</p>
 								</div>
 								<div class="col col__lg-4 col__md-6 col__xs-12">
 									<h4>Россия</h4>
@@ -1432,7 +1482,7 @@
 									<h2>Рекламным <br /> агентствам</h2><img src="assets/images/lime.svg" alt="" />
 								</div>
 								<div class="col col__md-6 col__xs-12">
-									<p class="text__md">Если вам интересно развивать направление корпоративных подарков в вашем агентстве, оставьте заявку и мы вышлем условия сотрудничества.</p><a class="btn btn--outlined" href="#">Запросить условия сотрудничества</a>
+									<p class="text__md">Если вам интересно развивать направление корпоративных подарков в вашем агентстве, оставьте заявку и мы вышлем условия сотрудничества.</p><a class="btn btn--outlined" href="#"><span>Запросить условия сотрудничества</span></a>
 								</div>
 							</div>
 						</div>
@@ -1442,10 +1492,10 @@
 			<footer class="footer">
 				<div class="container"><a class="footer__logo" href="/"><img src="assets/images/logo.svg" alt="" /></a><a class="footer__copy" href="#">© 2019 Унция. Все права защищены.</a>
 					<ul class="footer__social">
-						<li><a href="#"><img src="assets/images/icons/vk.svg" alt="" /></a></li>
-						<li><a href="#"><img src="assets/images/icons/instagram.svg" alt="" /></a></li>
-						<li><a href="#"><img src="assets/images/icons/fb.svg" alt="" /></a></li>
-					</ul><a href="#"><img src="assets/images/cloudmill.svg" alt="" /></a>
+						<li><a href="#"><i class="icon-vk"></i></a></li>
+						<li><a href="#"><i class="icon-instagram"></i></a></li>
+						<li><a href="#"><i class="icon-fb"></i></a></li>
+					</ul><a class="footer__cloud" href="https://www.cloudmill.ru" target="_blank"><img src="assets/images/cloudmill.svg" alt="" /></a>
 				</div>
 			</footer>
 		</div>
