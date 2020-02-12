@@ -7,9 +7,11 @@
 		<!--[if IE]>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><![endif]-->
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="canonical" href="" />
+		<link rel="canonical" href="/" />
 		<meta name="format-detection" content="telephone=no" />
 		<meta name="format-detection" content="address=no" />
+		<!-- OG-->
+		<meta property="og:image" content="assets/images/og.jpg" />
 		<meta name="description" content="Index page" />
 		<meta name="keywords" content="index, page" />
 		<meta name="author" content="" />
@@ -41,39 +43,45 @@
 		<!--[if lt IE 9]>
 <p class="browsehappy">Данный сайт построен на передовых, современных технологиях и не поддерживает Ваш браузер. Настоятельно рекомендуем выбрать и установить любой из &nbsp;<a href="http://browsehappy.com/" target="_blank">современных браузеров.</a> Это бесплатно и займет всего несколько минут.</p><![endif]-->
 		<div class="wrapper">
-			<div class="loader">
-				<div class="loader-outer"></div>
+			<div class="loader"><img src="assets/images/loader.gif" alt="" />
 			</div>
 			<div class="mfp-hide popup-block popup-block--sm zoom-anim-dialog" id="call">
 				<div class="close-popup popup-modal-dismiss"><img src="assets/images/icons/close-wh.svg" alt="" />
 				</div>
-				<h4>Свяжемся в течении 5 минут</h4>
-				<p>Работаем с понедельника по пятницу с 9:00 до 18:45</p>
-				<form action="" method="POST">
-					<div class="form__group">
-						<div class="float-container">
-							<input class="control" type="text" name="name2" id="name2" placeholder="Ваше имя" />
-							<label for="name2">Ваше имя</label><span>необязательно</span>
+				<div class="activeForm">
+					<h4>Свяжемся в течении 5 минут</h4>
+					<p>Работаем с понедельника по пятницу с 9:00 до 18:45</p>
+					<form action="" method="POST">
+						<div class="form__group">
+							<div class="float-container">
+								<input class="control" type="text" name="name2" id="name2" placeholder="Ваше имя" />
+								<label for="name2">Ваше имя</label><span>необязательно</span>
+							</div>
 						</div>
-					</div>
-					<div class="form__group">
-						<div class="float-container">
-							<input class="control" type="text" name="email2" id="email2" placeholder="Почта" />
-							<label for="email2">Почта</label><span>необязательно</span>
+						<div class="form__group">
+							<div class="float-container">
+								<input class="control" type="text" name="email2" id="email2" placeholder="Почта" />
+								<label for="email2">Почта</label><span>необязательно</span>
+							</div>
 						</div>
-					</div>
-					<div class="form__group">
-						<div class="float-container">
-							<input class="control" type="text" name="phone" id="phone6" placeholder="Ваш телефон" required="required" />
-							<label for="phone6">Ваш телефон</label>
+						<div class="form__group">
+							<div class="float-container">
+								<input class="control" type="text" name="phone" id="phone6" placeholder="Ваш телефон" required="required" />
+								<label for="phone6">Ваш телефон</label>
+							</div>
 						</div>
-					</div>
-					<button class="btn btn--outlined form__group btn--full" type="submit"><span>Оставить заявку на образец</span></button>
-					<div class="radio">
-						<input type="radio" id="sign1" name="sign" />
-						<label class="label" for="sign1"><span>Согласен на обработку персональных данных в соответствии с <a href>политикой конфиденциальности</a></span></label>
-					</div>
-				</form>
+						<button class="btn btn--outlined form__group btn--full sent--js" type="submit"><span>Оставить заявку на образец</span></button>
+						<div class="radio">
+							<input type="radio" id="sign1" name="sign" />
+							<label class="label" for="sign1"><span>Согласен на обработку персональных данных в соответствии с <a href>политикой конфиденциальности</a></span></label>
+						</div>
+					</form>
+				</div>
+				<div class="sentForm">
+					<h4>Спасибо за заявку!</h4><br />
+					<p>Наш менеджер свяжется с вами в течение часа, <br /> если заявка оставлена в рабочее время. Мы работаем <br /> с понедельника по пятницу с 9:00 до 18:45.</p>
+					<p>Или в ближайший будний день, если заявка оставлена <br /> в выходные.</p>
+				</div>
 			</div>
 			<div class="mfp-hide popup-block popup-block--sm zoom-anim-dialog" id="card">
 				<div class="close-popup popup-modal-dismiss"><img src="assets/images/icons/close-wh.svg" alt="" />
@@ -127,8 +135,26 @@
 							<p>Итого со скидкой, ₽</p>
 							<div class="summCountMain">47 916</div>
 						</div>
-						<div class="summ__item">
-							<p>Скидка <a class="text__sm" href="#">От чего зависит?</a></p>
+						<div class="summ__item tooltipMain">
+							<p>Скидка <a class="text__sm tooltip tooltip--js" href="#">От чего зависит?</a></p>
+							<div class="tooltipBody">
+								<div class="summ__item">
+									<p>10 0000 ₽ – 50 0000 ₽</p>
+									<div class="summCount">10%</div>
+								</div>
+								<div class="summ__item">
+									<p>50 0000 ₽ – 100 0000 ₽</p>
+									<div class="summCount">12%</div>
+								</div>
+								<div class="summ__item">
+									<p>100 0000 ₽ – 250 0000 ₽</p>
+									<div class="summCount">15%</div>
+								</div>
+								<div class="summ__item">
+									<p>250 0000 ₽ и более</p>
+									<div class="summCount">25%</div>
+								</div>
+							</div>
 							<div class="summCount">12%</div>
 						</div>
 						<div class="summ__item">
@@ -253,7 +279,7 @@
 								<p>Объем партии</p>
 								<h4>58 подарков</h4>
 							</div>
-						</div><a class="linkDots" href="#">Благодарственное письмо</a><a class="btn btn--primary" href="#"><span>Оставить заявку на подбор подарка</span></a>
+						</div><a class="linkDots" href="#" data-slide="4">Благодарственное письмо</a><a class="btn btn--primary" href="#"><span>Оставить заявку на подбор подарка</span></a>
 					</div>
 				</div>
 			</div>
@@ -271,14 +297,14 @@
 				</div>
 			</div>
 			<header class="header"><a class="header__logo" href="/"><img src="assets/images/logo.svg" alt="" /></a>
-				<nav class="navbar col__lg-6">
+				<nav class="navbar col__xl-6 col__lg-5">
 					<div class="main-nav__collapse">
-						<ul class="header__menu">
-							<li class="header__menu-el"><a class="header__menu__item" href="/" title="Каталог подарков">Каталог подарков</a>
+						<ul class="header__menu anchor">
+							<li class="header__menu-el"><a class="header__menu__item" href="#products" title="Каталог подарков">Каталог подарков</a>
 							</li>
-							<li class="header__menu-el"><a class="header__menu__item" href="" title="Как формируется подарок">Как формируется подарок</a>
+							<li class="header__menu-el"><a class="header__menu__item" href="#howto" title="Как формируется подарок">Как формируется подарок</a>
 							</li>
-							<li class="header__menu-el"><a class="header__menu__item" href="" title="Контакты">Контакты</a>
+							<li class="header__menu-el"><a class="header__menu__item" href="#contacts" title="Контакты">Контакты</a>
 							</li>
 						</ul>
 						<div class="visible__sm visible__xs">
@@ -298,9 +324,9 @@
 			</header>
 			<main class="page index">
 				<section class="cardBack">
-					<div class="container"><a class="textIcon" href="#"><img src="assets/images/icons/prev.svg" alt="" /><span class="text__sm">Вернуться в каталог</span></a>
+					<div class="container"><a class="textIcon" href="index.html"><img src="assets/images/icons/prev.svg" alt="" /><span class="text__sm">Вернуться в каталог</span></a>
 						<div class="card">
-							<div class="card__left">
+							<div class="card__left" data-aos="fade-up">
 								<div class="slick-prev slick-prev--ca"><i class="icon-left-arrow"></i></div>
 								<div class="slick-next slick-next--ca"><i class="icon-right-arrow"></i></div>
 								<div class="slider-for">
@@ -332,24 +358,24 @@
 									</div>
 								</div>
 							</div>
-							<div class="card__right">
+							<div class="card__right" data-aos="fade-up">
 								<div>
 									<p class="text--grey">Подарочный набор</p>
 									<h3>Внимательность</h3>
 									<div class="card-price">670 ₽</div>
 								</div>
 								<h4>Понравился подарок?</h4>
-								<p>Оставьте заявку. Мы с вами свяжемся <br /> и договримся, куда отправить пробники.</p><a class="btn btn--primary popup-modal popup-with-zoom-anim" href="#card"><span>Оставить заявку на образец</span></a>
-								<h4>Чтобы рассчитать сроки сборки <br /> и примерную стоимость, можете <br /> использовать наш калькулятор</h4><a class="btn btn--outlined popup-modal popup-with-zoom-anim" href="#product"><i class="sprite--calc"></i><span>Рассчитать стоимость партии подарков</span></a>
+								<p>Оставьте заявку. Мы с вами свяжемся <br /> и договримся, куда отправить пробники.</p><a class="btn btn--primary popup-modal popup-with-zoom-anim" href="#call"><span>Оставить заявку на образец</span></a>
+								<h4>Чтобы рассчитать сроки сборки <br /> и примерную стоимость, можете <br /> использовать наш калькулятор</h4><a class="btn btn--outlined popup-modal popup-with-zoom-anim" href="#card"><i class="sprite--calc"></i><span>Рассчитать стоимость партии подарков</span></a>
 							</div>
 						</div>
 					</div>
 				</section>
 				<div class="container">
 					<section class="cardComposition">
-						<div class="cardComposition__left">
+						<div class="cardComposition__left" data-aos="fade-up">
 							<h3>Состав набора</h3>
-							<ul class="list--bullet">
+							<ul class="list--bullet" data-aos="fade-up">
 								<li>Конфеты шоколадные ассорти, Италия / 6 унций</li>
 								<li>Прозрачный пакет с золотым донышком</li>
 								<li>1 сорт чая / 1 унция в емкости</li>
@@ -357,9 +383,9 @@
 								<li>Коробка «Классика»</li>
 							</ul>
 						</div>
-						<div class="cardComposition__right">
+						<div class="cardComposition__right" data-aos="fade-up">
 							<h3>Забрендировано в наборе</h3>
-							<ul class="list--bullet">
+							<ul class="list--bullet" data-aos="fade-up">
 								<li>Открытка с поздравлением</li>
 								<li>Упаковочная лента</li>
 								<li>Кружка</li>
@@ -367,77 +393,78 @@
 						</div>
 					</section>
 					<section class="mainCatalog">
-						<div class="title">
+						<div class="title" data-aos="fade-up">
 							<h3>Подарки, которые могут вам понравиться</h3>
 							<div class="slider-nav hidden__sm hidden__xs">
 								<div class="slick-prev slick-prev--ct"><i class="sprite--prev"></i></div>
 								<div class="slick-next slick-next--ct"><i class="sprite--next"></i></div>
 							</div>
 						</div>
-						<div class="catalogSlider--js">
+						<div class="catalogSlider--js" data-aos="fade-up">
 							<div class="products__item">
 								<div class="products__item-img"><img src="assets/images/prod-1.png" /></div>
 								<div class="products__item-title">Рождественская посылка</div>
 								<div class="products__item-price">670 ₽</div>
-								<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card"><span>Заказать подарок</span></a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
+								<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card"><span>Заказать подарок</span></a><a class="popup-modal popup-with-zoom-anim" href="#product">Что внутри?</a></div>
 							</div>
 							<div class="products__item">
 								<div class="products__item-img"><img src="assets/images/prod-2.png" /></div>
 								<div class="products__item-title">Вечер на льду</div>
 								<div class="products__item-price">670 ₽</div>
-								<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card"><span>Заказать подарок</span></a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
+								<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card"><span>Заказать подарок</span></a><a class="popup-modal popup-with-zoom-anim" href="#product">Что внутри?</a></div>
 							</div>
 							<div class="products__item">
 								<div class="products__item-img"><img src="assets/images/prod-3.png" /></div>
 								<div class="products__item-title">Посылка камин</div>
 								<div class="products__item-price">670 ₽</div>
-								<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card"><span>Заказать подарок</span></a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
+								<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card"><span>Заказать подарок</span></a><a class="popup-modal popup-with-zoom-anim" href="#product">Что внутри?</a></div>
 							</div>
 							<div class="products__item">
 								<div class="products__item-img"><img src="assets/images/prod-4.png" /></div>
 								<div class="products__item-title">Встреча</div>
 								<div class="products__item-price">670 ₽</div>
-								<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card"><span>Заказать подарок</span></a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
+								<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card"><span>Заказать подарок</span></a><a class="popup-modal popup-with-zoom-anim" href="#product">Что внутри?</a></div>
 							</div>
 							<div class="products__item">
 								<div class="products__item-img"><img src="assets/images/prod-5.png" /></div>
 								<div class="products__item-title">Золотой узор</div>
 								<div class="products__item-price">670 ₽</div>
-								<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card"><span>Заказать подарок</span></a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
+								<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card"><span>Заказать подарок</span></a><a class="popup-modal popup-with-zoom-anim" href="#product">Что внутри?</a></div>
 							</div>
 							<div class="products__item">
 								<div class="products__item-img"><img src="assets/images/prod-6.png" /></div>
 								<div class="products__item-title">Зимняя сказка</div>
 								<div class="products__item-price">670 ₽</div>
-								<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card"><span>Заказать подарок</span></a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
+								<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card"><span>Заказать подарок</span></a><a class="popup-modal popup-with-zoom-anim" href="#product">Что внутри?</a></div>
 							</div>
 							<div class="products__item">
 								<div class="products__item-img"><img src="assets/images/prod-7.png" /></div>
 								<div class="products__item-title">Внимательность</div>
 								<div class="products__item-price">670 ₽</div>
-								<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card"><span>Заказать подарок</span></a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
+								<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card"><span>Заказать подарок</span></a><a class="popup-modal popup-with-zoom-anim" href="#product">Что внутри?</a></div>
 							</div>
 							<div class="products__item">
 								<div class="products__item-img"><img src="assets/images/prod-8.png" /></div>
 								<div class="products__item-title">Биг-Бен</div>
 								<div class="products__item-price">670 ₽</div>
-								<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card"><span>Заказать подарок</span></a><a class="popup-modal popup-with-zoom-anim" href="#keys">Что внутри?</a></div>
+								<div class="products__item-footer"><a class="btn btn__sm btn--outlined popup-modal popup-with-zoom-anim" href="#card"><span>Заказать подарок</span></a><a class="popup-modal popup-with-zoom-anim" href="#product">Что внутри?</a></div>
 							</div>
 						</div>
 					</section>
 					<section class="cardOrder">
-						<div class="cardOrder__left">
+						<div class="cardOrder__left" data-aos="fade-up">
 							<h3>Соберем под ваш бюджет</h3>
 							<p class="text__lg">У вас ограничен бюджет и нужно собрать фиксированное число подарков?</p>
-							<p class="text__lg">Оставьте заявку и мы подберем оптимальную комплектацию и количество подарков под ваш бюджет.</p><a class="btn btn--primary" href="#"><span>Оставить заявку на подбор</span></a>
+							<p class="text__lg">Оставьте заявку и мы подберем оптимальную комплектацию и количество подарков под ваш бюджет.</p><a class="btn btn--primary popup-modal popup-with-zoom-anim" href="#call"><span>Оставить заявку на подбор</span></a>
 						</div>
-						<div class="cardOrder__right"><img src="assets/images/card/order.jpg" alt="" />
+						<div class="cardOrder__right" data-aos="fade-up"><img src="assets/images/card/order.jpg" alt="" />
 						</div>
 					</section>
 				</div>
 			</main>
-			<footer class="footer">
-				<div class="container"><a class="footer__logo" href="/"><img src="assets/images/logo.svg" alt="" /></a><a class="footer__copy" href="#">© 2019 Унция. Все права защищены.</a>
+			<footer class="footer" data-aos="fade-up">
+				<div class="container"><a class="footer__logo" href="/"><img src="assets/images/logo.svg" alt="" /></a>
+					<div class="footer__copy">© 2019 Унция. Все права защищены.</div>
 					<ul class="footer__social">
 						<li><a href="#"><i class="icon-vk"></i></a></li>
 						<li><a href="#"><i class="icon-instagram"></i></a></li>
