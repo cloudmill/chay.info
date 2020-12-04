@@ -23,3 +23,25 @@
 .ruble-symbol--light-brown {
     background-image: url("data:image/svg+xml,%3Csvg width='17' height='23' viewBox='0 0 17 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.06361 22.2359V18.1559H0.453613V16.2059H3.06361V13.5359H0.453613V11.2559H3.06361V0.815918H8.70361C11.3236 0.815918 13.2636 1.34592 14.5236 2.40592C15.8036 3.46592 16.4436 5.00592 16.4436 7.02592C16.4436 9.06592 15.7536 10.6659 14.3736 11.8259C12.9936 12.9659 10.9636 13.5359 8.28361 13.5359H5.76361V16.2059H10.7136V18.1559H5.76361V22.2359H3.06361ZM7.89361 11.2559C9.71361 11.2559 11.1236 10.9559 12.1236 10.3559C13.1436 9.75592 13.6536 8.67592 13.6536 7.11592C13.6536 5.75592 13.2336 4.74592 12.3936 4.08592C11.5536 3.42592 10.2436 3.09592 8.46361 3.09592H5.76361V11.2559H7.89361Z' fill='%23D4AF81'/%3E%3C/svg%3E");
 }
+
+.controlMain-wrapper {
+    padding: 0 30px;
+    width: 100%;
+    border: 1px solid #D0D0D0;
+    border-radius: 50px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controlMain-wrapper .controlMain {
+    width: auto;
+    max-width: 80%;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+
